@@ -68,7 +68,6 @@ runs:
         myst -v
         curvenote -v
         curvenote auth list
-        curvenote token set ${{ env.CURVENOTE_TOKEN }}
 
     - name: Build all content
       if: env.action == 'deploy'
